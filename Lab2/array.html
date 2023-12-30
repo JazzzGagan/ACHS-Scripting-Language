@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array</title>
+  </head>
+  <body>
+    <!-- <script>
+      let a = [2, 19, 37, 48, 45, 94, 12, 23, 78];
+      var largest = a[0];
+      var smallest = a[0];
+
+      for (let i = 1; i < a.length; i++) {
+        if (a[i] > largest) {
+          largest = a[i];
+        }
+        if (a[i] < smallest) {
+          smallest = a[i];
+        }
+      }
+      console.log(`Largest: ${largest} Smallest: ${smallest}`);
+    </script> -->
+    <script>
+      let a = [2, 19, 37, 48, 45, 94, 12, 23, 78];
+      var largest = a[0];
+      var smallest = a[0];
+      let i = 1;
+
+      while (i < a.length) {
+        if (a[i] > largest) {
+          largest = a[i];
+        }
+        if (a[i] < smallest) {
+          smallest = a[i];
+        }
+        i++;
+      }
+      console.log(`Largest: ${largest} Smallest: ${smallest}`);
+    </script>
+  </body>
+</html>

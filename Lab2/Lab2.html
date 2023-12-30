@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab2</title>
+  </head>
+  <body>
+    <p><input type="text" placeholder="Enter the number" /></p>
+
+    <p>
+      <button type="button" onclick="multiplicationTable()">Calculate</button>
+    </p>
+
+    <div id="result"></div>
+    <script>
+      function multiplicationTable() {
+        let number = document.querySelector("input").value;
+        if (isNaN(number)) {
+          document.querySelector("#result").innerHTML =
+            "Enter a valid number. Text not accepted";
+          return;
+        }
+        if (number == "") {
+          document.querySelector("#result").innerHTML =
+            "Enter a number. Blank not Accepted";
+          return;
+        }
+        if (number < 0) {
+          document.querySelector("#result").innerHTML =
+            "Negative Number not accepted";
+          return;
+        }
+        if (parseInt(number) != number) {
+          document.querySelector("#result").innerHTML =
+            "Decimal number not accepted";
+          return;
+        }
+        let multiplicationTableString = "";
+
+        for (i = 1; i <= 10; i++) {
+          multiplicationTableString += `${number} * ${i} = ${number * i}<br>`;
+        }
+        document.querySelector("#result").innerHTML = multiplicationTableString;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<script>
+  //swap Values
+
+  /* let glass1 = "water";
+let glass2 = "juice";
+let temp;
+
+temp = glass1;
+glass1 = glass2;
+glass2 = temp;
+
+console.log(glass1);
+console.log(glass2); */
+
+  //without using temp variable
+  /* let a = 4;
+let b = 5;
+
+[a, b] = [b, a];
+
+console.log(a);
+console.log(b);
+ */
+
+  //fibonacci Series
+  /* let a = 0;
+let b = 1;
+console.log(a);
+console.log(b);
+let c = 0;
+let num = 10;
+for (let i = 2; i < 10; i++) {
+  c = a + b;
+  console.log(c);
+  a = b;
+  b = c;
+}
+ */
+  //lucca Series
+
+  /* let a = 2;
+let b = 1;
+let c = 0;
+console.log(a);
+console.log(b);
+let num = 10;
+for (let i = 0; i < 10; i++) {
+  c = a + b;
+  console.log(c);
+  a = b;
+  b = c;
+} */
+
+  //find duplicate element in array
+
+  /* var arr = [2, 3, 4, 2, 5, 5, 6];
+
+for (let i = 0; i < arr.length; i++) {
+  var num = arr[i];
+
+  for (let j = i + 1; j < arr.length; j++) {
+    if (num == arr[i]) {
+      console.log(num);
+    }
+  }
+} */
+  //find largest and smallest in array
+  /* let arr = [5, 6, 8, 9, 20, 20, 24];
+var largest = arr[0];
+var smallest = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > largest) {
+    largest = arr[i];
+  }
+  if (arr[i] < smallest) {
+    smallest = arr[i];
+  }
+}
+console.log(` "largest: ${largest}" , "Smallest:${smallest}"`);
+ */
+
+  //Palindrome
+
+  let String = prompt("Please enter the String");
+  let len = String.length;
+  let msg = "your given string is not a palindrome";
+
+  for (let i = 0; i < len / 2; i++) {
+    if (String[i] != String[len - 1 - i]) {
+      msg = "It is not Palindrome";
+    }
+  }
+  console.log(`${String}: ${msg}`);
+</script>
